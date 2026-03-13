@@ -13,7 +13,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 // Bilder unter /images/ erreichbar
 app.use("/images", express.static(path.join(__dirname, "public", "images")));
 
-app.listen(5000, function () {
+app.listen(8000, function () {
   console.log("API listens on PORT 5001");
 });
 

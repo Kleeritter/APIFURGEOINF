@@ -2,12 +2,16 @@ const { Pool } = require("pg");
 const fs = require("fs");
 const path = require("path");
 // PostgreSQL Verbindungspool erstellen
+const DATABASE_HOST = "ep-plain-boat-agwxdval.c-2.eu-central-1.pg.koyeb.app";
+const DATABASE_USER = "postgres";
+const DATABASE_PASSWORD = "npg_nZdMF2q7NEoC";
+const DATABASE_NAME = "koyebdb";
 const pool = new Pool({
-  host: process.env.PGHOST || "localhost",
-  port: process.env.PGPORT || 5432,
-  user: process.env.PGUSER || "postgres",
-  password: process.env.PGPASSWORD || "vgi_admin",
-  database: process.env.PGDATABASE || "verteilte_geoinformation",
+  host: DATABASE_HOST,
+  port: 5432,
+  user: DATABASE_USER,
+  password: DATABASE_PASSWORD,
+  database: DATABASE_NAME,
 });
 
 // Test Datenbankverbindung
