@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_vgi",
+  "version": "1.0.0",
+  "description": "REST-API für das Abschlussprojekt.",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon --legacy-watch src/app.js"
+  },
+  "keywords": [
+    "REST-API",
+    "VGI"
+  ],
+  "author": "Gruppe XX",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "3.1.11",
+    "cors": "2.8.5"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "pg": "8.16.3"
+  }
+}
