@@ -13,6 +13,9 @@ const pool = new Pool({
   user: DATABASE_USER,
   password: DATABASE_PASSWORD,
   database: DATABASE_NAME,
+  ssl: {
+    rejectUnauthorized: false, // Wichtig für viele Cloud-Anbieter wie Koyeb/Heroku/Render
+  },
 });
 
 // Test Datenbankverbindung
