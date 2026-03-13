@@ -2,7 +2,8 @@ const { Pool } = require("pg");
 const fs = require("fs");
 const path = require("path");
 // PostgreSQL Verbindungspool erstellen
-const DATABASE_HOST = "ep-plain-boat-agwxdval.c-2.eu-central-1.pg.koyeb.app";
+const DATABASE_HOST =
+  "https://ep-plain-boat-agwxdval.c-2.eu-central-1.pg.koyeb.app";
 const DATABASE_USER = "postgres";
 const DATABASE_PASSWORD = "npg_nZdMF2q7NEoC";
 const DATABASE_NAME = "koyebdb";

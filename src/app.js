@@ -14,7 +14,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use("/images", express.static(path.join(__dirname, "public", "images")));
 
 app.listen(8000, function () {
-  console.log("API listens on PORT 5001");
+  console.log("API listens on PORT 8000");
 });
 
 app.get("/markers", api.getMarkers);
