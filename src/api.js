@@ -8,16 +8,15 @@ const DATABASE_USER = "postgres";
 const DATABASE_PASSWORD = "npg_nZdMF2q7NEoC";
 const DATABASE_NAME = "koyebdb";
 const pool = new Pool({
-  host: DATABASE_HOST,
+  host: "ep-plain-boat-agwxdval.c-2.eu-central-1.pg.koyeb.app", // REINER HOSTNAME!
   port: 5432,
   user: DATABASE_USER,
   password: DATABASE_PASSWORD,
   database: DATABASE_NAME,
   ssl: {
-    rejectUnauthorized: false, // Wichtig für viele Cloud-Anbieter wie Koyeb/Heroku/Render
+    rejectUnauthorized: false, // Erlaubt selbstsignierte Zertifikate von Cloud-Anbietern
   },
 });
-
 // Test Datenbankverbindung
 pool.on("connect", () => {
   console.log("Successfully connected to PostgreSQL");
